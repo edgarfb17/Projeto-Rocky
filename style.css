@@ -1,0 +1,836 @@
+html{
+    /*1rem é igual a 10px*/
+    font-size: 62.5%;
+}
+
+body{
+    margin: 0 auto;
+    font-size: 2.0rem;
+    font-family: Montserrat-Bold;
+    background-image: url(assets/bg.png);
+    background-position:bottom;
+    background-size: cover;
+    color: white;
+    overflow-x: hidden;
+}
+
+h1, h2{
+    text-transform: uppercase;
+}
+
+h2{
+    margin:0;
+    font-size: 6.0rem;
+    color: black;
+    padding: 110px 0 70px;
+}
+
+@font-face {
+    font-family: Montserrat-ExtraBold;
+    src: url(assets/fonts/Montserrat-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url(assets/fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-Medium;
+    src: url(assets/fonts/Montserrat-Medium.ttf);
+}
+
+@font-face{
+    font-family: Montserrat-Bold;
+    src: url(assets/fonts/Montserrat-Bold.ttf);
+}
+
+/* Header */
+
+header{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100vw;
+    height: 80px;
+    z-index: 5;
+}
+
+header .menu-section{
+    display: flex;
+    width: 60%;
+    justify-items: center;
+    justify-content: space-between;
+    height: 50px;
+    font-size: 1.6rem;
+}
+
+header nav{
+    width: 100%;
+    min-width: 500px;
+}
+header #home, header .menu-section ul li i, header .menu-section .submenu-serviços, header .menu-section .submenu-diferenciais{
+    display: none;
+}
+
+header ul{
+    text-transform: uppercase;
+    display: flex;
+    max-width: 1000px;
+    justify-content: space-around;
+}
+
+header li{
+    margin-right: 20px;
+    list-style: none;
+    min-width: 100px;
+    max-width: 200px;
+    text-align: center;
+}
+
+header a{
+    width: 100%;
+    text-decoration: none;
+    color: white;
+}
+
+header a:hover{
+    color: rgb(68, 240, 222);
+    transition: 0.4s;
+}
+header a[href="#rodape"]:hover{
+    color: white;
+    transition: 0.4s;
+}
+
+header img{
+    width: 180px;
+    height: 50px;
+}
+
+header a[href="index.html"]{
+    width: 180px;
+    height: 50px;
+}
+header a[href="#rodape"]{
+    color: rgb(72, 245, 228);
+}
+
+/* Banner */
+
+#banner{
+    background-image: url(assets/s1\ ft1.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+#banner h1{
+    font-size: 14.1rem;
+    font-family: Montserrat-ExtraBold;
+    min-width: 500px;
+    margin-bottom: 70px;
+}
+
+#titulo-banner{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-flow: column;
+    text-align: center;
+    position: absolute;
+    width: 70%;
+}
+
+#banner span{
+    color:yellow;
+    font-family: Montserrat-Bold;
+}
+
+#banner p{
+    font-family: Montserrat-Medium;
+    width: 1100px;
+
+}
+
+#banner a{
+    text-decoration: none;
+    color: white;
+}
+
+#banner a div:hover{
+    background-color: rgb(77, 255, 237);
+}
+
+#banner a div{
+    width: 330px;
+    padding: 27px 0;
+    background-color: turquoise;
+    text-transform: uppercase;
+    border-radius: 40px;
+    margin: 120px 0 60px;
+    display: inline-block;
+}
+
+/* Main */
+
+#main{
+    width: 90%;
+    max-width: 1500px;
+    margin:auto;
+    padding-top: 60px;
+}
+
+#sobre{
+    display: flex;
+
+}
+#sobre div{
+    width: 70%;
+    min-width: 680px;
+    background-color: white;
+    box-shadow: 5px 5px 20px black;
+    padding: 20px 40px;
+}
+
+#sobre p{
+    color: black;
+    font-family: Montserrat-bold;
+    line-height: 30px;
+}
+
+#sobre .sobre-txt{
+    font-family: Montserrat-Regular;
+}
+
+#serviços{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;    
+    margin-bottom: 100px;
+}
+
+#serviços h3{
+    color: yellow;
+    font-size: 2.7rem;
+    width: 370px;
+    height: 70px;
+    margin: 50px 0 50px;
+    display: inline-block;
+}
+
+#serviços p{
+    font-size: 2.2rem;
+    margin: 0 70px;
+    font-family: Montserrat-Medium;
+    padding-bottom: 40px;   
+}
+
+.S1{
+    background-image: url(assets/s3\ ft1.png);
+}
+
+.S2{
+    background-image: url(assets/s3\ ft2.png);  
+}
+
+.S3{
+    background-image: url(assets/s3\ ft3.png);
+}
+
+.S1, .S2, .S3{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+    max-width: 500px;
+    min-width: 400px;
+}
+
+.S1 h3{
+    justify-content: baseline;
+}
+
+#diferenciais{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    flex-wrap: wrap;
+}
+
+.dif1{
+    background-image: url(assets/s4\ ft1.png);
+}
+
+.dif2{
+    background-image: url(assets/s4\ ft2.png);
+}
+
+.dif3{
+    background-image: url(assets/s4\ ft3.png)
+}
+
+.dif1, .dif2, .dif3{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    
+    border-radius: 80px;
+    min-width: 200px;
+    max-width: 400px;
+}
+
+#diferenciais i{
+    font-size: 15rem;
+    margin-top: 90px;
+}
+
+#diferenciais p{
+    margin: 60px 70px;
+}
+
+/* Footer */
+
+footer{
+    margin-top: 200px;
+    background-color: rgb(43, 43, 43);
+    border-bottom: 83px solid yellow;
+    border-top: 83px solid yellow;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+
+#contato{
+    width: 586px;
+    margin: 100px 80px 0 100px;
+    text-align: left;
+}
+
+footer .txt2{
+    color: yellow;
+}
+
+footer .txt3{
+    color: rgb(79, 196, 184);
+}
+
+.footer-txt{
+    line-height: 30px;
+}
+
+#contato img{
+    margin-right: 80px;
+}
+
+#contato a i{
+    color: white;
+    font-size: 5.5rem;
+    margin-left: 40px;
+}
+
+#contato i{
+    color: yellow;
+    font-size: 2.5rem;
+    padding-right: 20px;
+    display: inline-block;
+}
+
+#email{ 
+    display: inline-block;
+    margin-top: 70px; 
+    border-right: 1px solid white;
+    width: 315px;
+}
+
+#cel{
+    display: inline-block;
+    margin-top: 70px;
+    padding-left: 70px;
+}
+
+#endereço{
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+    min-width: 320px;
+    max-width: 600px;
+}
+
+#endereço i{
+    height: 10px;
+}
+
+#cel, #email, #endereço{
+    font-family: Montserrat-Regular;
+    text-align: left;
+}
+
+#endereço p {
+    display: inline-block;
+    
+}
+
+/* Formulário*/
+
+#bnt-enviar{
+    background-color: rgb(79, 196, 184);
+    font-size: 2.7rem;
+    margin: 70px 0 0;
+    width: 90%;
+    padding:20px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+#bnt-enviar:hover{
+    cursor: pointer;
+    background-color: rgb(64, 241, 224);
+}
+
+#msg-email .input.msg{
+    height: 200px;
+}
+
+#msg-email{
+    width: 700px;
+    height: 80%;
+    display: flex;
+    flex-flow: column;
+    justify-items: center;
+    align-items: center;
+    background-color: rgb(116, 116, 116);
+    padding-bottom: 50px;
+    margin: 80px;
+}
+
+#msg-email input, #msg-email textarea, select{
+    margin-top: 40px;
+    width: 90%;
+    height: 76px;
+    font-size: 2.7rem;
+    text-align:left;
+    font-family: Montserrat-Regular;
+}
+
+#msg-email textarea::placeholder, #msg-email input::placeholder{
+    color: rgb(202, 202, 202);
+}
+
+#msg-email input:focus, #msg-email textarea:focus{
+    border-left: solid 6px yellow;
+}
+
+/* Medias */
+
+@media (max-width:1217px){
+
+    header .menu-section{
+        width: 100%;
+    }
+    header img{
+        margin: 0 60px;
+    }
+
+    #banner h1{
+        font-size: 8.0rem;
+    }
+
+    #banner p{
+        font-size: 1.5rem;
+        width: 700px;
+    }
+
+    #banner a div{
+        font-size: 1.8rem;
+    }
+
+    #diferenciais, #serviços{
+        justify-content: space-around;
+    }
+
+    footer{
+        flex-wrap: wrap;
+    }
+
+}
+@media (max-width:768px){
+
+    html{
+        font-size: 50%;
+    }
+
+    body{
+        background-image: none;
+    }
+
+    header{
+        justify-content: space-around;
+    }
+
+    header nav{
+        display: none;
+    }
+
+    header img{
+        width: 150px;
+        height: 40px;
+        margin: 0;
+    }
+    header a[href="index.html"]{
+        width: 150px;
+        height: 40px;
+    }
+
+    header a[href="#rodape"]{
+        color: white;
+    }
+
+    .one, .two, .three{
+        background-color: white;
+        border-radius: 40px;
+        height: 5px;
+        width: 100%;
+        margin: 6px auto;
+        transition-duration: 0.3s;
+    }
+
+    .menu-section{
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+    .menu-toggle{
+        width: 40px;
+        height: 30px;
+        margin: 30px 0 0 30px;
+    }
+
+    /* menu on*/
+
+    .menu-section.on{
+        width: 350px;
+        height: auto;
+        background-color: rgba(255, 255, 255,0.2);
+        backdrop-filter: blur(10px);
+        border-top-right-radius: 40px;
+        border-bottom-right-radius: 40px;
+        transition-duration: 0.3s ;
+    }
+
+    .menu-section.on nav{
+        display: block;
+        margin-top:50px;
+        width: 350px; 
+        height: 100%;
+    }
+
+    .menu-section.on nav ul{
+        width: 70%;
+        height: 100%;
+        display: block;
+        font-size: 2.3rem;
+        line-height: 50px;
+    }
+
+    .menu-section.on nav ul li{
+        max-width: 250px;
+        padding: 10px 0;
+        border-bottom: 2px solid white;
+    }
+
+    .menu-section.on nav ul li a{
+        width: 300px;
+    }
+    
+    .menu-section.on .menu-toggle .one{
+        transform: rotate(45deg) translate(7px, 7px);
+    }
+
+    .menu-section.on .menu-toggle .two{
+        opacity: 0;
+    }
+
+    .menu-section.on .menu-toggle .three{
+        transform: rotate(-45deg) translate(8px, -10px);
+    }
+
+    .menu-section.on .menu-toggle {
+        top: 0px;
+        right: 30px;
+        position: absolute;
+    }
+
+    .menu-section.on #blog{
+        border-bottom:  none;
+    }
+    
+    .menu-section.on #home {
+        display: block;
+    }
+    
+    .menu-section.on .submenu-serviços, .menu-section.on .submenu-diferenciais{
+        display: none;
+    }
+    
+    .menu-section.on li i{
+        display: inline-block;
+        width:20px;
+    }
+
+    /*submenus on*/
+
+    .menu-section.on ul ul li{
+        font-family: Montserrat-Medium;
+        border-bottom: none;
+        font-size: 1.8rem;
+        line-height: 16px;
+    }
+
+    .menu-section.on .submenu-serviços.on, .menu-section.on .submenu-diferenciais.on{
+        display: block
+    }
+
+    #icon-serv.on, #icon-dif.on{
+        transform: rotate(180deg);
+        transition-duration: 0.3s ;
+    }
+
+    #icon-serv, #icon-dif{
+        transition-duration: 0.3s ;
+    }
+
+    #banner{
+        background-image: url(assets/mobile/s1\ mobile.png);
+    }
+
+    #banner p{
+        max-width: 500px;
+    }
+
+    #banner a div{
+        font-size: 1.8rem;
+    }
+
+    #sobre .corte-sobre{
+        display: none;
+    }
+
+    #sobre div{
+        min-width: 400px;
+        width: 90%;
+    }
+
+    .S1, .S2, .S3{
+        height: 420px;
+        min-width: 630px;
+    }
+
+    #serviços h3{
+        height: 30px;
+        font-size: 3.0rem;
+    }
+
+    #serviços p{
+        font-size: 2.4rem;
+    }
+
+    .S1{
+        background-image: url(assets/mobile/s3\ ft1.png);
+    }
+
+    .S2{
+        background-image: url(assets/mobile/s3\ ft2.png);
+    }
+
+    .S3{
+        background-image: url(assets/mobile/s3\ ft3.png);
+    }
+
+    .dif1, .dif2, .dif3{
+        height: 550px;
+        min-width: 600px;
+        line-height: 30px;
+        font-size: 2.4rem;
+    }
+
+    .dif1{
+        background-image: url(assets/mobile/s4\ ft1.png);
+    }
+
+    .dif2{
+        background-image: url(assets/mobile/s4\ ft2.png);
+    }
+
+    .dif3{
+        background-image: url(assets/mobile/s4\ ft3.png);
+    }
+
+    #contato{
+        min-width: 556px;
+    }
+
+    #contato img{
+        height: 60px;
+    }
+
+    #msg-email{
+        width: 100vw;
+        margin: 70px 0 0;
+    } 
+
+}
+
+@media (max-width:646px){
+    #banner h1{
+        font-size: 6.0rem;
+        min-width: 200px;
+    }
+    #banner p{
+        width: auto;
+    }
+    #sobre div{
+        min-width: 200px;
+        width: auto;
+    }
+    #contato{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        min-width: 256px;
+        width: auto;
+        margin: 70px 50px 0;
+    }
+    #contato img{
+        margin: 0px 0 0 60px;
+    }
+
+    #contato a i{
+        font-size: 7.5rem;
+        margin: 40px 40px 0;
+    }
+    #contato a[href="https://www.facebook.com/RockyDigitalPerformance/"]{
+        margin-left: 20px;
+    }
+    #endereço{
+        max-width: 300px;
+        margin-left: 20px;
+        min-width: 200px;
+    }
+    #email{
+        border: none;
+        margin-left: 20px;
+    }
+    #cel{
+        padding: 0;
+        margin: 50px 0 50px 20px;
+    }
+     .footer-txt{
+        width: auto;
+    }
+    .S1, .S2, .S3{
+        min-width: 200px;
+        height: auto;
+    }
+
+    .dif1, .dif2, .dif3{
+        min-width: 200px;
+        max-width: 500px;
+        font-size: 1.9rem;
+    }
+    #serviços p, #diferenciais p{
+        margin: 20px 5px 0;
+    }
+    
+    #serviços h3{
+        width: 200px;
+    }
+}
+
+/* animaçôes */
+
+[data-anime] {
+    opacity: 0;
+    transition: transform 1.5s;    
+}
+[data-negative]{
+    transition: background-color .5s;
+}
+
+[data-anime="left"] {
+    transform: translate3d(-1000px, 0, 0);
+}
+
+[data-anime="right"] {
+    transform: translate3d(1000px, 0, 0);
+}
+
+[data-anime].animate{
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+[data-negative].animate{
+    background-color: white;
+    box-shadow: 5px 5px 30px rgb(175, 174, 174);
+}
+[data-negative].animate a{
+    color: black;
+}
+
+[data-negative].animate a[href="#rodape"]{
+    color:white;
+    padding: 10px;
+    background-color: turquoise;
+    transition: background-color 1.0s;
+    border-radius: 100px;
+}
+
+[data-negative].animate a[href="#rodape"]:hover{
+    background-color: rgb(71, 255, 237);
+}
+
+[data-negative].animate a[href="index.html"] img{
+    content: url(assets/logoblack.png);
+}
+
+[data-negative].animate .one, [data-negative].animate .two, [data-negative].animate .three{
+    background-color: black;
+}
+
+/* formulário */
+
+#msg-email .msgs, #msg-email .alert-error, #msg-email .alert-ok{
+    display: none;
+    margin: 0;
+    width: 90%;
+    text-align: left;
+}
+
+#msg-email .alert-ok.show{
+    border: 2px solid green;
+    color: rgb(204, 240, 204);
+    margin: 20px 0;
+    padding: 15px;
+    display: inline-block;
+}
+
+#msg-email .alert-error.show{
+    border: 2px solid red;
+    color: rgb(250, 199, 199);
+    margin: 20px 0;
+    padding: 15px;
+    display: inline-block;
+}
+ #msg-email .msgs.show{
+     display: inline-block;
+ }
